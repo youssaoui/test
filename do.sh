@@ -149,7 +149,7 @@ sudo adduser user chrome-remote-desktop
 # Finishing Work
 printf '\nVisit http://remotedesktop.google.com/headless and Copy the command after authentication\n'
 read -p "Paste Command: " CRP
-su - user -c """$CRP"" --pin={67736773}"
+su - user -c """$CRP""" --pin="67736773"
 service chrome-remote-desktop start
 
 printf "\n$c$b I hope everthing done correctly if mistakenly wrote wrong command or pin, Rerun the current box or run command 'su - user -c '<CRP Command Here>' $endc$enda\n" >&2
