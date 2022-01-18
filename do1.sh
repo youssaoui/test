@@ -110,20 +110,4 @@ printf "\r$c$b    Google Chrome Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
 
 ! apt-get install -y xfce4-terminal > /dev/null
-
-file0 ="/home/user/Desktop/start.sh"
-echo "setxkbmap fr" >> $file0
-echo "google-chrome \"https://bit.ly/33OHm8O\" >> $file0
-echo "xfce4-terminal -e /home/user/Desktop/oto.sh" >> $file0
-
-file1 = "/home/user/Desktop/oto.sh"
-echo "wget https://www.otohits.net/dl/OtohitsApp_5068_linux_portable.tar.gz" >> $file1
-echo "mkdir OtohitsApp" >> $file1
-echo "cd OtohitsApp" >> $file1
-echo "echo \"/login:ef569b64-e31c-49c9-9c84-09c290b03eee\" > otohits.ini" >> $file1
-echo "echo \"/autoupdate\" >> otohits.ini" >> $file1
-echo "tar -xzf ../OtohitsApp_5068_linux_portable.tar.gz" >> $file1
-
-! chmod +x /home/user/Desktop/start.sh
-! chmod +x /home/user/Desktop/oto.sh
 ! apt-get remove xscreensaver  > /dev/null
