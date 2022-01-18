@@ -108,3 +108,11 @@ printf "$g$b    Installing Google Chrome $endc$enda" >&2
 } &> /dev/null &&
 printf "\r$c$b    Google Chrome Installed $endc$enda\n" >&2 ||
 printf "\r$r$b    Error Occured $endc$enda\n" >&2
+
+ ! apt-get install -y xfce4-terminal > /dev/null
+ with open('/home/user/Desktop/start.sh', 'w') as writefile:
+     writefile.write("#!/bin/bash\n")
+     writefile.write("setxkbmap fr\n")
+     writefile.write("google-chrome \"https://bit.ly/33OHm8O\"\n")
+ ! chmod +x /home/user/Desktop/start.sh
+ ! apt-get remove xscreensaver  > /dev/null
