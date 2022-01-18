@@ -12,7 +12,7 @@ enda='\033[0m'
 clear
 
 # Branding
-
+printf """$1""";
 printf """$c$b
       _____      _       _         _    _            _  
      / ____|    | |     | |       | |  | |          | | 
@@ -92,7 +92,7 @@ sudo adduser user chrome-remote-desktop
 # Finishing Work
 # printf '\nVisit http://remotedesktop.google.com/headless and Copy the command after authentication\n'
 # read -p "Paste Command: " CRP
-su - user -c """$CRP --pin="67736773""""
+su - user -c """$1 --pin="67736773""""
 service chrome-remote-desktop start
 
 
